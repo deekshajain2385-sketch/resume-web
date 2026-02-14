@@ -3,51 +3,1063 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deeksha Jain's Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Deeksha Jain - Chartered Accountant | CA | Internal Audit | Financial Reporting</title>
+    <meta name="description" content="CA Deeksha Jain | 3+ years Big 4 (EY) & Reliance Jio | Internal Audit, Ind AS, Revenue Assurance, Financial Reporting | Mumbai | Open to opportunities">
+    <meta name="keywords" content="Chartered Accountant, CA, Internal Audit, EY, Reliance Jio, Ind AS, Financial Reporting, Revenue Assurance, Mumbai jobs, Big 4, Statutory Audit">
+    
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Deeksha Jain - Chartered Accountant | EY & Reliance Jio">
+    <meta property="og:description" content="3+ years Big 4 (EY) & Reliance Jio experience in Internal Audit, Ind AS compliance, Revenue Assurance">
+    <meta property="og:url" content="https://cadeeksha.github.io">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/0ea5e9/ffffff?text=Deeksha+Jain+CA">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary-color: #64748b;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow: 0 20px 25px -5px rgba(0, 0,0, 0.1);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0,0, 0.25);
+            --success-color: #10b981;
+        }
+
+        [data-theme="dark"] {
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --border-color: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] header {
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            padding: 0.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--text-primary);
+        }
+
+        .theme-toggle:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(3, max-content);
+            gap: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            width: 20px;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-image {
+            position: relative;
+            height: 450px;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            border-radius: 50%;
+            opacity: 0.08;
+            z-index: -1;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            border-radius: 2px;
+        }
+
+        /* Experience Cards */
+        .experience-grid {
+            display: grid;
+            gap: 2.5rem;
+        }
+
+        .experience-card {
+            background: var(--bg-secondary);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        [data-theme="dark"] .experience-card {
+            background: var(--bg-secondary);
+        }
+
+        .experience-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-dark), var(--success-color));
+        }
+
+        .company-role {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+
+        .company-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .job-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .dates-location {
+            display: flex;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .achievement {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .achievement-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+            font-size: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        .achievement-text {
+            flex: 1;
+            font-size: 0.95rem;
+        }
+
+        .counter {
+            font-weight: 700;
+            color: var(--success-color);
+            font-size: 1.1em;
+        }
+
+        /* Education Section */
+        .education-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .education-card {
+            display: flex;
+            gap: 2rem;
+            padding: 2.5rem;
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateX(10px);
+        }
+
+        .education-details h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .education-grade {
+            font-weight: 700;
+            color: var(--success-color);
+            font-size: 1.1rem;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: var(--bg-secondary);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+        }
+
+        .skill-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.75rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-tag {
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-primary);
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .skill-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Schedule Section */
+        #schedule {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            text-align: center;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .schedule-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .schedule-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+
+        .calendly-embed {
+            min-height: 450px;
+            border-radius: 16px;
+            border: none;
+            margin-top: 1.5rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1.25rem;
+            border: none;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            color: var(--text-primary);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: var(--text-secondary);
+        }
+
+        .submit-btn {
+            padding: 1.25rem 3rem;
+            background: white;
+            color: var(--primary-dark);
+            border: none;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 1.4rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+        }
+
+        .social-link:hover {
+            background: white;
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .social-link.linkedin:hover {
+            background: #0a66c2;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            section {
+                padding: 4rem 0;
+            }
+
+            .education-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .schedule-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .dates-location {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        /* Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+            z-index: 1001;
+            transform-origin: left;
+            transition: transform 0.1s;
+        }
+    </style>
 </head>
-<body>
+<body data-theme="light">
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
     <header>
-        <h1>Deeksha Jain</h1>
-        <p>Web Developer | Designer | Content Creator</p>
+        <nav>
+            <div class="logo">Deeksha Jain</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#schedule">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Passionate web developer with experience in creating dynamic websites and applications. Skilled in HTML, CSS, JavaScript, and various frameworks.</p>
+
+    <!-- Hero Section -->
+    <section id="hero" class="animate">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Deeksha Jain</h1>
+                    <p class="tagline">Chartered Accountant with 3+ years of experience across Big 4 (EY) and Reliance Jio, specializing in Internal Audit, Financial Reporting, Ind AS compliance, risk assessment, and MIS.</p>
+                    
+                    <div class="contact-info">
+                        <a href="tel:+918839203802" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            +91-8839203802
+                        </a>
+                        <a href="mailto:cadeekshaj9@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            cadeekshaj9@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/ca-deeksha" target="_blank" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+
+                    <a href="deeksha-jain-resume.pdf" class="download-btn" download>
+                        <i class="fas fa-file-pdf"></i>
+                        Download Resume (PDF)
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div style="width: 100%; height: 100%; border-radius: 24px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; font-weight: 700; text-align: center; padding: 2rem; box-shadow: var(--shadow-lg);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+                        <div style="font-size: 1.2rem;">CA Deeksha Jain</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-    </section>
+
+    <!-- Experience Section -->
     <section id="experience">
-        <h2>Experience</h2>
-        <h3>Web Developer at XYZ Company</h3>
-        <p>June 2022 - Present</p>
-        <ul>
-            <li>Developed responsive web applications using React and Node.js.</li>
-            <li>Collaborated with designers and content creators to enhance user experience.</li>
-        </ul>
-        <h3>Intern at ABC Firm</h3>
-        <p>January 2022 - May 2022</p>
-        <ul>
-            <li>Assisted in the development of several company websites.</li>
-            <li>Learned the basics of web design and frontend development.</li>
-        </ul>
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-grid">
+                <!-- Reliance Jio -->
+                <div class="experience-card animate">
+                    <div class="company-role">
+                        <div class="company-logo">RJIL</div>
+                        <div>
+                            <div class="company-name">Reliance Jio Infocomm Ltd, Mumbai</div>
+                            <div class="job-title">Manager - Revenue & Commercial Assurance</div>
+                            <div class="dates-location">
+                                <span>Aug'24 – Present</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="achievement-text">
+                            Validated revenue data, accruals, deferrals, and cut-off accuracy for monthly and quarterly financial reporting, ensuring compliance with accounting principles, resulting in a <span class="counter" data-target="15">0</span>% reduction in reporting errors.
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="achievement-text">
+                            Designed and maintained risk registers and control matrices for revenue and commercial processes, supporting management and audit requirements.
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="achievement-text">
+                            Developed automated KPI dashboards (Tableau) to monitor exceptions, control effectiveness, and remediation status, improving reporting timeliness and audit readiness.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EY India -->
+                <div class="experience-card animate">
+                    <div class="company-role">
+                        <div class="company-logo">EY</div>
+                        <div>
+                            <div class="company-name">S.R. Batliboi & Associates LLP (EY India), Ahmedabad</div>
+                            <div class="job-title">Sr. Executive - TMT Sector</div>
+                            <div class="dates-location">
+                                <span>Apr'22 – Mar'24</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Ahmedabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon"><i class="fas fa-building"></i></div>
+                        <div class="achievement-text">
+                            Led statutory audits for TMT sector client with turnover of Rs. <span class="counter" data-target="42000">0</span> Cr, ensuring compliance with Ind AS and Companies Act, 2013, resulting in zero audit findings.
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon"><i class="fas fa-search"></i></div>
+                        <div class="achievement-text">
+                            Independently handled audit procedures for key account balances including Revenue from Contracts with Customers (Ind AS 115), Property Plant & Equipment (Ind AS 16), and Provisions.
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                        <div class="achievement-text">
+                            Hosted training session on "Internal financial control and Sampling" attended by 50+ participants.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Satyanarayan Goyal -->
+                <div class="experience-card animate">
+                    <div class="company-role">
+                        <div class="company-logo">SGC</div>
+                        <div>
+                            <div class="company-name">Satyanarayan Goyal & Co., Indore</div>
+                            <div class="job-title">Article Assistant</div>
+                            <div class="dates-location">
+                                <span>Feb'18 – Feb'21</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Indore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon"><i class="fas fa-file-invoice"></i></div>
+                        <div class="achievement-text">
+                            Executed statutory and tax audits for clients in Technology, Manufacturing, Mining, and Logistics sectors with turnovers INR 30-200 crores, improving audit efficiency by <span class="counter" data-target="20">0</span>% through streamlined processes.
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon"><i class="fas fa-calculator"></i></div>
+                        <div class="achievement-text">
+                            Prepared and filed 200+ ITRs and 300+ GST Returns alongside Annual returns, Registrations, Cancellations and Audits. Core Team Member for GST Audit SOPs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: deekshajain@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/deekshajain">linkedin.com/in/deekshajain</a></p>
-        <p>GitHub: <a href="https://github.com/deekshajain2385">github.com/deekshajain2385</a></p>
+
+    <!-- Education Section -->
+    <section id="education" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card animate">
+                    <div style="flex-shrink: 0;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(45deg, var(--primary-color), var(--primary-dark)); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: 700;">CA</div>
+                    </div>
+                    <div class="education-details">
+                        <h4>CA Final - The Institute of Chartered Accountants of India</h4>
+                        <div class="education-grade">450/800 | Feb 2022</div>
+                        <p>Exemption in SFM, Direct Tax & Indirect Tax</p>
+                    </div>
+                </div>
+                <div class="education-card animate">
+                    <div style="flex-shrink: 0;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(45deg, var(--success-color), #059669); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem;">B.Com</div>
+                    </div>
+                    <div class="education-details">
+                        <h4>B.Com - M.K.H.S. Gujarati College (DAVV)</h4>
+                        <div class="education-grade">62% | First-class with distinction | April 2019</div>
+                    </div>
+                </div>
+                <div class="education-card animate">
+                    <div style="flex-shrink: 0;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(45deg, #eab308, #ca8a04); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">XII</div>
+                    </div>
+                    <div class="education-details">
+                        <h4>Class XII - Pratibhasthali Gyanodaya Vidyapeeth (CBSE)</h4>
+                        <div class="education-grade">91.6% | School Topper | 2016</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Skills & Awards Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Achievements</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate">
+                    <h3><i class="fas fa-chart-pie"></i> Technical Proficiency</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Advanced Excel</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Tally ERP</span>
+                        <span class="skill-tag">SAP (Basics)</span>
+                        <span class="skill-tag">AI Tools</span>
+                    </div>
+                </div>
+                <div class="skill-category animate">
+                    <h3><i class="fas fa-trophy"></i> Honors & Awards</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Gold Standard Rating (EY Top 5%)</span>
+                        <span class="skill-tag">A* Rating (Reliance Jio Top 5%)</span>
+                        <span class="skill-tag">'Kudos' Award (EY)</span>
+                        <span class="skill-tag">CA Final Exemptions (3 Papers)</span>
+                        <span class="skill-tag">Marketplace Simulation Success</span>
+                    </div>
+                </div>
+                <div class="skill-category animate">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Advanced AI Masterclass (2025)</span>
+                        <span class="skill-tag">Financial Modelling (CA Monk)</span>
+                        <span class="skill-tag">IFRS/GAAP (Udemy 2024)</span>
+                        <span class="skill-tag">IFRS Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Interview Section -->
+    <section id="schedule">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Ready for Opportunities</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 3rem;">Schedule a call or send a message. Open to Managerial roles in Internal Audit, Revenue Assurance, Financial Reporting.</p>
+            
+            <div class="schedule-grid">
+                <div class="schedule-card animate">
+                    <h3 style="margin-bottom: 1rem;"><i class="fas fa-calendar-check"></i> Schedule Interview</h3>
+                    <p>Available for 30-min discussions. Mumbai based, open to opportunities.</p>
+                    <!-- Replace YOUR_CALENDLY_URL with your actual Calendly -->
+                    <div class="calendly-inline-widget" 
+                         data-url="https://calendly.com/your-calendly/30min-ca-discussion?hide_event_type_details=1&hide_landing_page_details=1&background_color=2563eb&text_color=ffffff&primary_color=ffffff" 
+                         style="min-width:100%; height:500px;"></div>
+                    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                </div>
+
+                <div class="schedule-card animate">
+                    <h3 style="margin-bottom: 1rem;"><i class="fas fa-envelope-open"></i> Direct Contact</h3>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Your Name / Company" required>
+                        <input type="email" placeholder="recruiter@company.com" required>
+                        <textarea rows="5" placeholder="Tell me about the opportunity... (Internal Audit, Revenue Assurance, Managerial roles)" required></textarea>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ca-deeksha" class="social-link linkedin" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:cadeekshaj9@gmail.com?subject=Opportunity%20for%20CA%20Deeksha%20Jain" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+918839203802" class="social-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Deeksha Jain</p>
+        <div class="container">
+            <p>© 2026 Deeksha Jain | CA | Mumbai | Last updated: Feb 2026 | <a href="#hero" style="color: var(--primary-color);">Back to Top</a></p>
+        </div>
     </footer>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            themeToggle.querySelector('i').className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            localStorage.setItem('theme', newTheme);
+        });
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', savedTheme);
+        themeToggle.querySelector('i').className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+        // Smooth scrolling & Navbar effects
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth', block: 'start'
+                });
+            });
+        });
+
+        // Animate counters
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseFloat(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = current < 10 ? Math.ceil(current) : Math.round(current * 10) / 10;
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        // Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    if (entry.target.querySelector('.counter')) {
+                        setTimeout(animateCounters, 500);
+                    }
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -100px 0px' });
+
+        document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+        // Scroll progress
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.offsetHeight - window.innerHeight;
+            document.getElementById('scrollProgress').style.transform = `scaleX(${scrollTop / docHeight})`;
+            
+            const header = document.querySelector('header');
+            header.style.background = window.scrollY > 100 ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.95)';
+        });
+
+        // Contact form
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitBtn = e.target.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+                alert('✅ Thank you! Message sent successfully. I\'ll respond within 24 hours.');
+                e.target.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // PDF Download notification
+        document.querySelector('.download-btn').addEventListener('click', (e) => {
+            // Add your actual PDF file to the hosting folder
+            if (!e.target.href.includes('deeksha-jain-resume.pdf')) {
+                e.preventDefault();
+                alert('📄 Add "deeksha-jain-resume.pdf" to your hosting folder for PDF download!');
+            }
+        });
+    </script>
 </body>
 </html>
